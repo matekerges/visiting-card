@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.head{
+  background-image: url(pictures/profile_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 70%;
+  width: 70%;
+  float: left;
+}
+.content_1{
+  width: 30%;
+  height: auto;
+  background-color: white;
+  float: right;
+}
+.content_1::after,
+.head::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h1{
+  text-align: left;
+  padding: 5rem 0 0 5rem;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+h2{
+  padding: 0 5rem;
+}
+.about{
+  padding: 7rem 5rem;
+  font-size: 1.15rem
+}
+.links{
+  text-align: center;
+}
+.social{
+  font-size: 1.5rem
+}
+a{
+  text-decoration: none;
+  color:#333;
+  padding: 2rem 2rem;
+  display: inline-block
+}
+@media (max-width: 1200px){
+  .head, .content_1{
+    float: none;
+    width: 100%
+  }
+  .about{
+    padding: 2rem 5rem;
+  }
+}
