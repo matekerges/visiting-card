@@ -42,28 +42,29 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
 body{
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   box-sizing: border-box;
   margin: 0 auto;
 }
-.head{
+.image{
   background-image: url(pictures/profile_2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  position: fixed;
   padding-bottom: 70%;
   width: 70%;
   float: left;
 }
 .content_1{
   width: 30%;
-  height: auto;
-  background-color: white;
   float: right;
 }
 .content_1::after,
-.head::after {
+.image::after {
   content: "";
   clear: both;
   display: table;
@@ -95,9 +96,10 @@ a{
   display: inline-block
 }
 @media (max-width: 1200px){
-  .head, .content_1{
+  .image, .content_1{
     float: none;
-    width: 100%
+    width: 100%;
+    position: static;
   }
   .about{
     padding: 2rem 5rem;
