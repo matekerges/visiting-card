@@ -43,49 +43,37 @@ table {
 	border-spacing: 0;
 }
 
-
 body{
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   box-sizing: border-box;
   margin: 0 auto;
+  line-height: 1.8rem;
 }
-.image{
+.img{
   background-image: url(pictures/profile_2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
   padding-bottom: 70%;
-  width: 70%;
-  float: left;
-}
-.content_1{
-  width: 30%;
-  float: right;
-  position: relative;
-}
-.content_1::after,
-.image::after {
-  content: "";
-  clear: both;
-  display: table;
+  width: 100%
+ 
 }
 h1{
   text-align: left;
-  padding: 5rem 0 0 5rem;
   font-weight: 300;
   font-size: 2rem;
   text-transform: uppercase;
 }
-h2{
-  padding: 0 5rem;
+.name-headline{
+  padding: 4rem 4rem;
 }
 .about{
-  padding: 7rem 5rem;
+  padding: 0 4rem;
   font-size: 1.15rem
 }
 .links{
   text-align: center;
+  padding: 4rem 0
 }
 .social{
   font-size: 1.5rem;
@@ -96,13 +84,18 @@ a{
   padding: 2rem 2rem;
   display: inline-block;
 }
-@media (max-width: 1200px){
-  .image, .content_1{
-    float: none;
-    width: 100%;
-    position: static;
+@media (min-width: 1200px){
+  .img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    padding-bottom: 70%;
+    width: 70%;
+    float: left;
   }
-  .about{
-    padding: 2rem 5rem;
+  .content_1{
+    float: right;
+    width: 30%;
+    height: 100%;
   }
 }
